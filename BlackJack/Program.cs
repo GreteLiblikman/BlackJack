@@ -20,15 +20,15 @@ namespace BlackJack
                 string[] CardMark = new string[4] { "C", "S", "D", "H" };
 
                 //Generating Cards to Player
-                int c1 = randomNumber.Next(1, 11);
+                int c1 = randomNumber.Next(1, 11); //Generates card value
                 int c2 = randomNumber.Next(1, 11);
-
+                    
+                                                   //Generates card Mark
                 int index = randomNumber.Next(0, 4);
                 int index2 = randomNumber.Next(0, 4);
 
                 string Name = CardMark[index];
                 string Name2 = CardMark[index2];
-
 
                 //Generating Cards to Dealer
                 int c3 = randomNumber.Next(1, 11);
